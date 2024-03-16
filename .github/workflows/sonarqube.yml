@@ -39,10 +39,10 @@ jobs:
         id: find-pull-request
         with:
           branch: main
-      - run: echo "Pull Request ${number} (${sha})"
-        env:
-          number: ${{ steps.find-pull-request.outputs.number }}
-          sha: ${{ steps.find-pull-request.outputs.head-sha }}
+      - run: echo "${{ github.event.number }}"
+       # env:
+        #  number: ${{ steps.find-pull-request.outputs.number }}
+        # sha: ${{ steps.find-pull-request.outputs.head-sha }}
       # - name: Approve Pull Request
       #   uses: juliangruber/approve-pull-request-action@v2
       #   with:
