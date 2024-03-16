@@ -64,9 +64,9 @@ jobs:
         uses: juliangruber/approve-pull-request-action@v2
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          number: PR_NUMBER
-        env:
-          PR_NUMBER: ${{ github.event.number }}
+          number: 1
+        #env:
+          #PR_NUMBER: ${{ github.event.number }}
 
       # Optionally you can use the output from the Quality Gate in another step.
       # The possible outputs of the `quality-gate-status` variable are `PASSED`, `WARN` or `FAILED`.
