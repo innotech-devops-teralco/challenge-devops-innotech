@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 
-// Primera PR
+// Primera PR sin mergear
 function App() {
   return (
     <div className="App">
